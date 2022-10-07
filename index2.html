@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset=utf-8>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function mul() {
+            var x = document.getElementById("first").value;
+
+
+
+            document.getElementById("demo").innerHTML = x * 1.8 + 32;
+
+
+        }
+
+        function div() {
+            var y = document.getElementById("second").value;
+            document.getElementById("demo").innerHTML = (y - 32) / 18;
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <label for="first"><b>temperature in C :</b> </label>
+    <input type="number" id="first">
+    <input type="button" id="mul" onClick="mul()" value="convert">
+    <br><br>
+    <label for="second"><b>temperature in f :</b> </label>
+    <input type="number" id="second">
+    <input type="button" id="div" onClick="div()" value="convert">
+    <br><br> The Result is :
+    <p id="demo"> </p>
+
+
+</body>
+
+</html>

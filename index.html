@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mul() {
+            var m = (document.getElementById("a").value) * (document.getElementById("b").value);
+            document.getElementById("resultm").innerHTML = m;
+            alert(m);
+        }
+
+        function div() {
+
+            var d = (document.getElementById("a").value) / (document.getElementById("b").value);
+
+            document.getElementById("resultd").innerHTML = d;
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <button onclick="mul()">Multiply</button>
+    <button onclick="div()">Divide</button>
+    <p id="resultm"></p>
+    <p id="resultd"></p>
+</body>
+
+</html>
